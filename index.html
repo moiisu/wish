@@ -106,8 +106,6 @@
 <main class="null" style="--screen-height: 100vh;--screen-width: undefinedpx; --genshin-font: var(--gi-global-font);"><div class="toasts svelte-dsqrcm"></div>
 
 	
-	<a href="/" class="uid" title="Try Your Luck by this Simulator">
-	</a>
 </main>
 
 
@@ -146,6 +144,9 @@
 			xiaoshi.addEventListener('click', function() {
   				xiaoshi.parentNode.removeChild(xiaoshi); // 从 DOM 中移除该元素
 			});
+
+			var element = document.querySelector('a.uid[title="Try Your Luck by this Simulator"]');
+			element.parentNode.removeChild(element);
 		}
 	</script>
 
